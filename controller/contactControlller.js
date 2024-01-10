@@ -17,8 +17,8 @@ export const createContact = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'GMAIL', // e.g., 'Gmail'
       auth: {
-        user: 'info.manasvitech@gmail.com', 
-        pass: 'xupg tcwc ecpb ginr',    // Your email password or app-specific password
+        user: 'info.mcs01@gmail.com', 
+        pass: 'rldh vaxy dcjx zngi',    // Your email password or app-specific password
       },
       tls: {
         rejectUnauthorized: false, // Disable SSL certificate validation
@@ -28,7 +28,7 @@ export const createContact = async (req, res) => {
     // Define email data
     const mailOptions = {
       from: req.body.email,    // Sender's email address
-      to: 'info.manasvitech@gmail.com', // Recipient's email address
+      to: 'info.mcs01@gmail.com', // Recipient's email address
       subject: 'New Contact Form Submission',
       text: `
         Name: ${name}

@@ -14,8 +14,8 @@ export const createMembership = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'GMAIL', // e.g., 'Gmail'
       auth: {
-        user: 'info.manasvitech@gmail.com', 
-        pass: 'xupg tcwc ecpb ginr',  // Your email password or app-specific password
+        user: 'info.mcs01@gmail.com', 
+        pass: 'rldh vaxy dcjx zngi',  // Your email password or app-specific password
       },
       tls: {
         rejectUnauthorized: false, // Disable SSL certificate validation
@@ -25,7 +25,7 @@ export const createMembership = async (req, res) => {
     // Define email data
     const mailOptions = {
       from: req.body.email,    // Sender's email address
-      to: 'info.manasvitech@gmail.com', // Recipient's email address
+      to: 'info.mcs01@gmail.com', // Recipient's email address
       subject: 'New Membership Form Submission',
       text: `
         Membership For: ${membershipfor}
